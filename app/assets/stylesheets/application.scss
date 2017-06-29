@@ -10,13 +10,12 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
 
 /* Sass Imports */
-@import '1-base/fonts.sass';
-@import '1-base/variables.sass';
-@import '1-base/global.sass';
-@import '1-base/typography.sass';
-@import '2-components/navigation.sass';
+@import '1-base/fonts';
+@import '1-base/variables';
+@import '1-base/typography';
+@import '1-base/global';
+@import '2-components/navigation';
