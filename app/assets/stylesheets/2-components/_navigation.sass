@@ -9,28 +9,18 @@ header
 
 .navigation__wrapper
   height: 100%
-  width: 100%
-  max-width: 100%
-  padding: 0 10%
   display: flex
-  flex-flow: row-nowrap
-  justify-content: space-between
+  flex-direction: row
+  justify-content: center
   align-items: center
 
 .navigation__links
-  margin: 0
-  padding: 0
-  li
-    display: inline-block
-    list-style: none
-
-.navigation__links--left
-  li
-    margin-right: 2rem
-
-.navigation__links--right
-  li
-    margin-right: 2rem
+  display: none
+//   margin: 0
+//   padding: 0
+//   li
+//     display: inline-block
+//     list-style: none
 
 .navigation__link
   color: $blue
@@ -45,3 +35,54 @@ header
   font-family: $secondary-font-family
   letter-spacing: 0.2rem
   margin: 0
+  text-align: center
+
+// Navigation Media Queries
+
+@media screen and (min-width: $tablet-breakpoint)
+  header
+    height: 80px
+    width: 100%
+    max-width: 100%
+    background-color: $white
+    box-shadow: $box-shadow
+
+  .navigation__wrapper
+    height: 100%
+    width: 80%
+    max-width: 80%
+    margin: 0 auto
+    display: flex
+    flex-flow: row-nowrap
+    justify-content: space-between
+    align-items: center
+
+  .navigation__links
+    display: block
+    margin: 0
+    padding: 0
+    li
+      display: inline-block
+      list-style: none
+
+  .navigation__links--left
+    li
+      margin-right: 2rem
+
+  .navigation__links--right
+    li
+      margin-left: 2rem
+
+  .navigation__link
+    color: $blue
+    font-size: 1.25rem
+    font-weight: 700
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+  .navigation__title
+    color: $dark-blue
+    font-family: $secondary-font-family
+    letter-spacing: 0.2rem
+    margin: 0
